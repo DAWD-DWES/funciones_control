@@ -33,7 +33,6 @@
                     <td class="conversion"><?php var_dump(is_null($x)); ?></td>
                 </tr>
                 <tr>
-                    <?php // $ = []; ?>
                     <td>$y no definida</td>
                     <td class="conversion"><?php var_dump(empty($y)); ?></td>
                     <td class="conversion"><?php var_dump(isset($y)); ?></td>
@@ -45,6 +44,13 @@
                     <td class="conversion"><?php var_dump(empty($z)); ?></td>
                     <td class="conversion"><?php var_dump(isset($z)); ?></td>
                     <td class="conversion"><?php var_dump(is_null($z)); ?></td>
+                </tr>
+                <tr>
+                    <?php $x = []; ?>
+                    <td>$x = []</td>
+                    <td class="conversion"><?php var_dump(empty($x)); ?></td>
+                    <td class="conversion"><?php var_dump(isset($x)); ?></td>
+                    <td class="conversion"><?php var_dump(is_null($x)); ?></td>
                 </tr>
                 <tr>
                     <?php $x = [1, 2]; ?>
@@ -95,7 +101,6 @@
                     <td class="conversion"><?php var_dump(isset($x)); ?></td>
                     <td class="conversion"><?php var_dump(is_null($x)); ?></td>
                 </tr>
-
             </tbody>
         </table>
     </body>

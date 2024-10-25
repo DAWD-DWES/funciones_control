@@ -10,8 +10,18 @@ table {
     margin: 0 auto;
     border-spacing: 10px;
     width: 90%;
+    table-layout: fixed; /* Hace que las celdas tengan un ancho uniforme */
+    border-collapse: collapse;
 }
 
+th {
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1; /* Color de fondo para el encabezado */
+    z-index: 1; /* Asegura que el encabezado esté sobre otras filas */
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
 
 tr {
     border-bottom: 1px solid #ddd;
@@ -26,8 +36,9 @@ tr:hover {
 }
 
 td {
-    width: 25%;
+    text-align: center;
     white-space: normal;
+    padding: 10px;
 }
 
 .conversion {
@@ -42,6 +53,3 @@ pre {
     font-family: "Times New Roman", courier, monospace;
     font-size: 1em;
 }
-
-
-
