@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Expresiones simples</title>
+        <title>Funciones de control de variables</title>
         <meta name="viewport" content="width=device-width">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="stylesheet.css">
